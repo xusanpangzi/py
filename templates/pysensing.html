@@ -1,0 +1,359 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>pysensing</title>
+
+<link rel="stylesheet" href="{% static 'css/pysensing.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="{% static 'js/pysensing.js' %}"></script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand">生态环境遥感机理与应用研究组</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="right li1"><a href="#">个人简介</a></li>
+            <li class="right li2"><a href="#">小组动态</a></li>
+            <li class="dropdown right">
+                <a href="#" data-toggle="dropdown">
+                    研究/论文 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu list">
+                    <li class="li3"><a href="#">课题</a></li>
+                    <li class="li4"><a href="#">论文</a></li>
+                </ul>
+            </li>
+            <li class="right li5"><a href="#">小组成员</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+    <div class="parentDiv">
+    	
+    	<div class="div2 container-fluid">
+    		
+    			<div class="row">
+    				<div class="col-lg-4 col-md-4 image">
+                        <img class="photo" src="{% static 'img/chenwei.jpg' %}">
+                        <img class="photo" src="{% static 'img/chenwei.jpg' %}">
+
+  
+                    </div>
+    				<div class="col-lg-8 col-md-8 information">
+                        <div class="content">
+                <h3>个人简介：</h3>
+                <p>陈伟: 副教授，博士</p>
+                <p>中国矿业大学（北京） 地球科学与测绘工程学院 遥感与地理信息系 副教授</p>
+                <p>办公室：中国矿业大学（北京） 综合楼605室</p>
+                <p>电话：010-62339335/13811950643</p>
+                <p>邮箱：chenw@cumtb.edu.cn/chenweibnu@126.com</p>
+                <h3>研究兴趣及个人情况：</h3>
+                <p>脆弱区生态环境遥感、大气环境遥感及应用、卫星遥感辐射定标</p>
+                <h3>教育经历：</h3>
+                <p>2011.10~2012.10 马里兰大学 大气与海洋科学系 访问学者（导师：李占清教授）</p>
+                <p>2008.09~2013.07 北京大学 地球与空间科学学院 博士（导师：晏磊教授）</p>
+                <p>2004.08~2008.07 北京师范大学 地理学与遥感科学学院 学士</p>
+                <h3>学术服务：</h3>
+                <p>2018.10 ~ 2019.3 International Journal of Remote Sensing,  Guest Editor</p>
+                <p>2016   ~ 今    Committee Member of Working Groups of ISPRS Commission III (Remote Sensing of Atmospheric Environment)</p>
+                <p>2013 ~ 今：担任以下期刊审稿人</p>
+                <p>Environmental International, Atmospheric Environment, Air Quality, Atmosphere and Health, Remote Sensing, Remote Sensing Letters, European Journal of Remote Sensing, International Journal of Environmental Research and Public Health, Atmospheric Pollution Research, International Journal of Remote Sensing, Science of the Total Environment</p>
+
+                <h3>近期进展：</h3>
+                <p></p>
+                </div>
+                        
+                    </div>
+    			</div>
+    			
+    		
+    	</div>
+    	<div class="div3 container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="col-lg-10 col-md-10 teamResult">
+
+                    {% for post in post_list %}
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <div class="title"><h3 class="panel-title">{{ post.title }}</h3></div>
+                                <div class="time"><h6>{{ post.created_time }}</h6></div>
+                            </div>
+                            <div class="panel-body">
+                                {{ post.body|safe}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+
+                <div class="col-lg-1 col-md-1"></div>
+            </div>
+            
+        </div>
+    	<div class="div4">
+         <div class="classes">
+             <h3>课题研究：</h3>
+                <p>2018.01 - 2020.12 国家自然科学基金 青年基金项目. 煤烟与沙尘混合非球形气溶胶偏振散射特性及其辐射强迫效应研究（主持）</p>
+                <p>2019.03 – 2021.03 广西壮族自治重点研发项目. 广西自然保护区生态环境遥感监测与技术示范（参与，课题负责人）</p>
+                <p>2017.07 - 2020.12 国家重点研发项目.大气边界层影响干沉降的过程与机制（参与）</p>
+                <p>2016.07 - 2021.06 国家重点研发项目.典型资源环境要素识别提取与定量遥感技术（参与）</p>
+                <p>2015.01 - 2018.12北京市优秀人才项目：利用偏振遥感数据反演北京地区PM2.5及其地面验证研究（主持）</p>
+
+         </div>   
+        </div>
+    	<div class="div5">
+            <div class="articles">
+                <h3>代表论文：</h3>
+                    <p>[1].Wei Chen, Huimin Tian, and Kai Qin. Black Carbon Aerosol in the Industrial City of Xuzhou, China: Temporal Characteristics and Source Appointment[J]. Aerosol and Air Quality Research. 2019, 19(4): 794-811. DOI: 10.4209/aaqr.2018.07.0245. (SCI检索)</p>
+                    <p>[2].W. Chen, A. J. Li, and F. Zhang. Roadside atmospheric pollution: still a serious environmental problem in Beijing, China[J]. Air Quality Atmosphere and Health. 2018, 11(10): 1203-1216. DOI: 10.1007/s11869-018-0620-2. (SCI检索)</p>
+                    <p>[3].Aiping Fan, Wei Chen, Long Liang, Wenbin Sun, Yi Lin, Huizheng Che, and Xuesheng Zhao. Evaluation and Comparison of Long-Term MODIS C5.1 and C6 Products against AERONET Observations over China[J]. Remote Sensing. 2017, 9(12). DOI: 10.3390/rs9121269. (SCI检索)</p>
+                    <p>[4].W. Chen, A. P. Fan, and L. Yan. Performance of MODIS C6 Aerosol Product during Frequent Haze-Fog Events: A Case Study of Beijing[J]. Remote Sensing. 2017, 9(5). DOI: 10.3390/rs9050496. (SCI检索)</p>
+                    <p>[5].Wei Chen, Hongzhao Tang, Haimeng Zhao, and Lei Yan. Analysis of Aerosol Properties in Beijing Based on Ground-Based Sun Photometer and Air Quality Monitoring Observations from 2005 to 2014[J]. Remote Sensing. 2016, 8(2): 110. DOI: 10.3390/rs8020110. (SCI检索)</p>
+                    <p>[6].W. Chen, L. Yan, N. Ding, M. D. Xie, M. Lu, F. Zhang, Y. X. Duan, and S. Zong. Analysis of Aerosol Radiative Forcing over Beijing under Different Air Quality Conditions Using Ground-Based Sun-Photometers between 2013 and 2015[J]. Remote Sensing. 2016, 8(6). DOI: 51010.3390/rs8060510. (SCI检索)</p>
+                    <p>[7].Wei Chen, Hongzhao Tang, and Haimeng Zhao. Urban air quality evaluations under two versions of the national ambient air quality standards of China[J]. Atmospheric Pollution Research. 2016, 7(1): 49-57. DOI: 10.1016/j.apr.2015.07.004. (SCI检索)</p>
+                    <p>[8].W. Chen, H. M. Zhao, Z. Q. Li, X. Jing, and L. Yan. Uncertainty Evaluation of an In-Flight Absolute Radiometric Calibration Using a Statistical Monte Carlo Method[J]. IEEE Transactions on Geoscience and Remote Sensing. 2015, 53(5): 2925-2934. DOI: 10.1109/Tgrs.2014.2366779. (SCI检索)</p>
+                    <p>[9] Wei Chen, Fusheng Wang, Guofeng Xiao, Kai Wu, and Shixuan Zhang. Air Quality of Beijing and Impacts of the New Ambient Air Quality Standard[J]. Atmosphere. 2015, 6(8): 1243. DOI: 10.3390/atmos6081243. (SCI检索)</p>
+                    <p>[10].Wei Chen, Hongzhao Tang, and Haimeng Zhao. Diurnal, weekly and monthly spatial variations of air pollutants and air quality of Beijing[J]. Atmospheric Environment. 2015, 119: 21-34. DOI: 10.1016/j.atmosenv.2015.08.040. (SCI检索)</p>
+                    <p>[11].Wei Chen, Lei Yan, and Haimeng Zhao. Seasonal Variations of Atmospheric Pollution and Air Quality in Beijing[J]. Atmosphere. 2015, 6(11): 1753. DOI: 10.3390/atmos6111753. (SCI检索)</p>
+                    <p>[12].Wei Chen, Lei Yan, Zhanqing Li, Xin Jing, Yini Duan, and Xiaoxiong Xiong. In-flight absolute calibration of an airborne wide-view multispectral imager using a reflectance-based method and its validation[J]. International Journal of Remote Sensing. 2013, 34(6): 1995-2005. (SCI检索)</p>
+                <h3>专著：</h3>
+                    <p>晏磊, 陈伟,相云, 杨彬, 赵云升. 偏振遥感物理. 科学出版社，2014.s</p>
+            </div>
+        </div>
+    	<div class="div6">
+            <div class="team">
+           <table class="members">
+            <thead class="head">
+                <th class="th1">
+                    <td><h3>在读研究生</h3></td>
+                </th>
+            </thead>
+            <tbody>
+                <th class="th2">
+                    <td>
+
+                        <div class="responsive">
+  <div class="img">
+
+      <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+
+                    </td> 
+                </th>
+            </tbody>
+           
+               
+           </table>
+           <table class="members">
+            <thead class="head">
+                <th class="th1">
+                    <td><h3>已毕业研究生</h3></td>
+                </th>
+            </thead>
+            <tbody>
+                <th class="th2">
+                    <td>
+
+                        <div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc"><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    佩奇
+</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    佩奇
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+                <p>毕业于什么什么大学</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</div>
+  </div>
+</div>
+
+                    </td> 
+                </th>
+            </tbody>
+           
+               
+           </table>
+           <table class="members">
+            <thead class="head">
+                <th class="th1">
+                    <td><h3>本科生</h3></td>
+                </th>
+            </thead>
+            <tbody>
+                <th class="th2">
+                    <td>
+
+                        <div class="responsive">
+  <div class="img">
+    <a target="_blank" href="//static.runoob.com/images/demo/demo2.jpg">
+      <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    </a>
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+<div class="responsive">
+  <div class="img">
+   <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="{% static 'img/1.jpg' %}" alt="图片文本描述" width="150" height="165">
+    <div class="desc">佩奇</div>
+  </div>
+</div>
+ 
+
+                    </td> 
+                </th>
+            </tbody>
+           
+               
+           </table>
+       </div>
+       </div>
+            
+        
+    </div>
+</nav>
+</body>
+</html>
