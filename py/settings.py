@@ -25,7 +25,7 @@ SECRET_KEY = '2-x@r)+cf8@h@t@27n46zu1vfs(x+81w89to2v924*)fk3$04k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','pysensing.org.cn']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','www.pysensing.org.cn']
 
 
 # Application definition
