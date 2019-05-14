@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$('.li1').addClass("active");
+	$('.dropdown').click(function(){
+		$('.li1,.li2,.li3,.li4,.li5').removeClass("active");
+	})
 	$('.li1').click(function(){
 		$('.div3,.div4,.div5,.div6').css("display","none");
 		$('.div2').css("display","block");
