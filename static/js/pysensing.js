@@ -33,6 +33,8 @@ $(document).ready(function(){
 		$('.li5').addClass("active");
 		$('.li2,.li3,.li4,.li1').removeClass("active");
 	});
+	$('.modal-dialog').draggable();
+
 
 });
 
