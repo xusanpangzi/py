@@ -18,6 +18,7 @@ def deploy():
 
     run('cd %s && git stash' % source_folder)
     run('cd %s && git pull' % source_folder)
+    run('cd %s && git stash pop' % source_folder)
 
     run("""
         cd {} &&
