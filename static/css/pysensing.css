@@ -2,8 +2,9 @@
 .nav{position:absolute;right:0}
 .container-fluid{background-color: black;}
 .parentDiv{margin-top:4rem;}
-.div2{position: absolute;background-color: rgb(194,204,216);background-attachment: fixed;width:100%;display: block}
-.div3{position: absolute;background-color: rgb(172,176,179);width:100%;background-attachment: fixed;height: 100%;display: none;overflow: auto;}
+.div1{position: absolute;background-color: rgb(194,204,216);background-attachment: fixed;width:100%;display: block}
+.div2{position: absolute;background-color: rgb(172,176,179);width:100%;background-attachment: fixed;height: 100%;display: none;overflow: auto;}
+.div3{position: absolute;background-color: rgb(157,169,183);width:100%;background-attachment: fixed;height: 100%;display: none;overflow: auto;}
 .div4{position: absolute;background-color: rgb(134,150,166);width:100%;background-attachment: fixed;height: 100%;display: none;overflow: auto;}
 .div5{position: absolute;background-color: rgb(194,204,216);width:100%;background-attachment: fixed;height: 100%;display: none;overflow: auto;}
 .div6{position: absolute;background-color: rgb(157,169,183);width:100%;background-attachment: fixed;display: none}
@@ -25,3 +26,7 @@
 .desc{height:40px;text-align: center;padding-top: 10px}
 .title{}
 .time{float: right;}
+
+.group_life{width:100%;}
+.life_td{text-align: center;padding: 2rem}
+.life1{width:25rem}

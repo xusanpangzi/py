@@ -29,24 +29,32 @@
     <div>
         <ul class="nav navbar-nav">
             <li class="right li1"><a href="#">个人简介</a></li>
-            <li class="right li2"><a href="#">小组动态</a></li>
+            <li class="dropdown right">
+                <a href="#" data-toggle="dropdown">
+                    小组动态 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu list">
+                    <li class="li2"><a href="#">学术动态</a></li>
+                    <li class="li3"><a href="#">小组生活</a></li>
+                </ul>
+            </li>
             <li class="dropdown right">
                 <a href="#" data-toggle="dropdown">
                     研究/论文 <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu list">
-                    <li class="li3"><a href="#">课题</a></li>
-                    <li class="li4"><a href="#">论文</a></li>
+                    <li class="li4"><a href="#">课题</a></li>
+                    <li class="li5"><a href="#">论文</a></li>
                 </ul>
             </li>
-            <li class="right li5"><a href="#">小组成员</a></li>
+            <li class="right li6"><a href="#">小组成员</a></li>
         </ul>
     </div>
     </div>
 </nav>
     <div class="parentDiv">
     	
-    	<div class="div2 container-fluid">
+    	<div class="div1 container-fluid">
     		
     			<div class="row">
     				<div class="col-lg-4 col-md-4">
@@ -91,7 +99,7 @@
     			
     		
     	</div>
-    	<div class="div3 container-fluid">
+    	<div class="div2 container-fluid">
             <div class="row">
                 <div class="col-lg-1 col-md-1"></div>
                 <div class="col-lg-10 col-md-10 teamResult">
@@ -114,6 +122,16 @@
             </div>
             
         </div>
+    <div class="div3">
+        <table class="group_life">
+            <tr>
+                <td class="life_td life1"><h3>16级毕业照</h3></td>
+                <td class="life_td"><img class="img-responsive" src="{% static 'img/group_life/19gratuaded2.jpeg' %}"></td>
+                <td class="life_td"><img class="img-responsive" src="{% static 'img/group_life/19gratuaded6.jpeg' %}"></td>
+
+            </tr>
+        </table>
+    </div>
     	<div class="div4">
          <div class="classes">
              <h3>课题研究：</h3>
