@@ -16,9 +16,8 @@ env.port = '22'
 def deploy():
     source_folder = '/home/normale/sites/pysensing.org.cn/py'
 
-    run('cd %s && git stash' % source_folder)
+
     run('cd %s && git pull' % source_folder)
-    run('cd %s && git stash pop' % source_folder)
 
     run("""
         cd {} &&
